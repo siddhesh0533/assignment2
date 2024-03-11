@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #dad7cd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.full {
+    width: 50%;
+    max-width: 1000px;
+    min-height: 100px;
+    background-color: rgb(245, 239, 231);
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+}
+
+.left {
+    position: initial;
+    background-color: #507bb8;
+    padding: 20px;
+
+}
+
+.right {
+    position: initial;
+    background-color: white;
+    padding: 20px;
+
+}
+
+.social-icon {
+    width: 30px;
+    /* Adjust the size of the icons as needed */
+    height: auto;
+    margin-right: 10px;
+    /* Adjust spacing between icons */
+}
+
+.imgs {
+    border-radius: 100%;
+    justify-content: center;
+}
+
+.image,
+.Contact,
+.Skills,
+.Language,
+.Hobbies,
+.title,
+.Summary,
+.Experience,
+.Education,
+.project {
+    margin-bottom: 30px;
+}
+
+.h2 {
+    background-color: rgb(4, 96, 150);
+}

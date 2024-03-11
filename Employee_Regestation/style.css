@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #A9A9A9;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.apply_box {
+    max-width: 600px;
+    padding: 20px;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-shadow: 4px 3px 5px rgba(1, 1, 1, 0.1);
+    border-radius: 10px;
+}
+
+.form_container {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.form_control {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5px;
+}
+
+label {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+input,
+select,
+textarea {
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+.textarea_control {
+    grid-column: 1 / span 2;
+}
+
+.textarea_control textarea {
+    width: 100%;
+}
+
+input:focus {
+    outline-color: red;
+}
+
+.button_container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+button{
+    border: transparent solid 2px;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 8px;
+    transition: 0.3s ease-in;
+}
+
+.green{
+    background-color:#4CAF50;
+}
+
+.red{
+    background-color: red;
+}
+
+button:hover {
+    background-color: #ccc;
+    border: 2px solid red;
+    color: black;
+    transition: 0.3s ease-out;
+    cursor: pointer;
+}
+
+.edu_det{
+    grid-column: 1 / span 2;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    /* margin-top: 20px; */
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+    color: rgba(0, 0, 0, 0.579);
+}
+
+tr:hover {
+    background-color: #f2f2f2;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 460px) {
+    .textarea_control {
+      grid-column: 1 / span 1;
+    }
+  } ;

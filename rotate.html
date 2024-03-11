@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotating Div</title>
+    <style>
+        .container {
+            width: 400px;
+            height: 400px;
+            background-color: crimson;
+            align-items: center;
+            justify-content: center;
+            margin: 150px auto;
+            transition: transform 4s ease-in-out 2s;
+        }
+
+        .container.rotate {
+            transform: rotate(60deg);
+        }
+
+        body {
+            background-color: #f1faee;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container"></div>
+
+    <script>
+        // JavaScript to add 'rotate' class to the div after a 2-second delay
+        setTimeout(function () {
+            document.querySelector('.container').classList.add('rotate');
+        }, 2000);
+    </script>
+
+</body>
+
+</html>
